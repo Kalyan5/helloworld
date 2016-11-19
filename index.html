@@ -1,0 +1,49 @@
+<html ng-app="flipsnap">
+
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bindonce/bindonce.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-controller="headerCtrl">
+
+        <!--header-->
+        <div ng-include="headerUrl"></div>
+        <!--Cotent-->
+        <div ng-include="contentUrl"></div>
+        <!--footer-->
+        <div ng-include=""></div>
+
+
+    </div>
+    <!--header files-->
+    <script src="app/header/header.js"></script>
+    <script src="app/header/headerCtrl.js"></script>
+    <!--end of header-->
+
+    <!--Register files-->
+    <script src="app/register/register.js"></script>
+    <script src="app/register/registerCtrl.js"></script>
+    <!--end of register-->
+    <!--Lookup module-->
+    <script src="app/lookup/lookup.js"></script>
+    <script src="app/lookup/lookupSvc.js"></script>
+    <!--product-->
+    <script src="app/product/product.js"></script>
+    <script src="app/product/productSvc.js"></script>
+    <script src="app/product/productCtrl.js"></script>
+    
+
+    <!--main files-->
+    <script src="app/app.js"></script>
+
+    <!--end of main-->
+</body>
+
+</html>
